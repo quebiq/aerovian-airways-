@@ -1,1 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Aerovian Airways | Connecting Africa, Beyond Our Sky</title>
+
+  <meta
+    name="description"
+    content="Aerovian Airways — Connecting Africa, Beyond Our Sky."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="site-header">
+    <div class="container nav-container">
+
+      <a href="#home" class="brand">
+        <img
+          src="aerovian-logo.jpeg"
+          alt="Aerovian Airways Logo"
+          class="brand-logo"
+        >
+
+        <div class="brand-text">
+          <span class="brand-name">AEROVIAN AIRWAYS</span>
+          <span class="brand-slogan">
+            Connecting Africa, Beyond Our Sky
+          </span>
+        </div>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#flights">Flights</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#fleet">Our Fleet</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <main>
+
+    <section id="home" class="hero">
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+
+        <p class="eyebrow">WELCOME ABOARD AEROVIAN AIRWAYS</p>
+
+        <h1>
+          Connecting Africa,
+          <span>Beyond Our Sky.</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover a new way to travel across Africa and beyond.
+          Reliable connections, modern aircraft and a journey
+          designed around you.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#flights" class="btn btn-primary">
+            Search Flights
+          </a>
+
+          <a href="#destinations" class="btn btn-secondary">
+            Explore Destinations
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FLIGHT SEARCH ================= -->
+
+    <section id="flights" class="booking-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="eyebrow">PLAN YOUR JOURNEY</p>
+
+          <h2>Find Your Flight</h2>
+
+          <p>
+            Search for your next Aerovian Airways journey.
+          </p>
+        </div>
+
+
+        <div class="booking-card">
+
+          <div class="trip-options">
+
+            <label>
+              <input
+                type="radio"
+                name="trip"
+                value="round"
+                checked
+              >
+              Round Trip
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="trip"
+                value="oneway"
+              >
+              One Way
+            </label>
+
+          </div>
+
+
+          <form id="flightSearchForm">
+
+            <div class="form-grid">
+
+              <div class="form-group">
+                <label for="from">From</label>
+
+                <input
+                  id="from"
+                  name="from"
+                  type="text"
+                  placeholder="Johannesburg (JNB)"
+                  required
+                >
+              </div>
+
+
+              <div class="form-group">
+                <label for="to">To</label>
+
+                <input
+                  id="to"
+                  name="to"
+                  type="text"
+                  placeholder="Destination"
+                  required
+                >
+              </div>
+
+
+              <div class="form-group">
+                <label for="departure">
+                  Departure
+                </label>
+
+                <input
+                  id="departure"
+                  name="departure"
+                  type="date"
+                  required
+                >
+              </div>
+
+
+              <div class="form-group">
+                <label for="return">
+                  Return
+                </label>
+
+                <input
+                  id="return"
+                  name="return"
+                  type="date"
+                >
+              </div>
+
+
+              <div class="form-group">
+                <label for="passengers">
+                  Passengers
+                </label>
+
+                <select id="passengers" name="passengers">
+
+                  <option value="1">
+                    1 Passenger
+                  </option>
+
+                  <option value="2">
+                    2 Passengers
+                  </option>
+
+                  <option value="3">
+                    3 Passengers
+                  </option>
+
+                  <option value="4">
+                    4 Passengers
+                  </option>
+
+                  <option value="5">
+                    5 Passengers
+                  </option>
+
+                  <option value="6">
+                    6 Passengers
+                  </option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn-primary search-button"
+            >
+              Search Flights
+            </button>
+
+          </form>
+
+          <div
+            id="flightSearchResult"
+            class="form-result"
+            aria-live="polite"
+          ></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= DESTINATIONS ================= -->
+
+    <section id="destinations" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            WHERE WE FLY
+          </p>
+
+          <h2>
+            Explore Our Destinations
+          </h2>
+
+          <p>
+            Connect to major cities across Africa and selected
+            international destinations.
+          </p>
+
+        </div>
+
+
+        <div class="cards-grid">
+
+          <article class="destination-card">
+
+            <div class="card-icon">
+              🇿🇦
+            </div>
+
+            <h3>Johannesburg</h3>
+
+            <p>
+              Our home base and gateway to Southern Africa.
+            </p>
+
+            <span>
+              JNB
+            </span>
+
+          </article>
+
+
+          <article class="destination-card">
+
+            <div class="card-icon">
+              🇿🇦
+            </div>
+
+            <h3>Cape Town</h3>
+
+            <p>
+              Discover South Africa's iconic coastal city.
+            </p>
+
+            <span>
+              CPT
+            </span>
+
+          </article>
+
+
+          <article class="destination-card">
+
+            <div class="card-icon">
+              🇿🇼
+            </div>
+
+            <h3>Harare</h3>
+
+            <p>
+              Connect Southern Africa with Aerovian.
+            </p>
+
+            <span>
+              HRE
+            </span>
+
+          </article>
+
+
+          <article class="destination-card">
+
+            <div class="card-icon">
+              🇰🇪
+            </div>
+
+            <h3>Nairobi</h3>
+
+            <p>
+              Your gateway to East Africa.
+            </p>
+
+            <span>
+              NBO
+            </span>
+
+          </article>
+
+
+          <article class="destination-card">
+
+            <div class="card-icon">
+              🇳🇬
+            </div>
+
+            <h3>Lagos</h3>
+
+            <p>
+              Connect with West Africa's largest aviation market.
+            </p>
+
+            <span>
+              LOS
+            </span>
+
+          </article>
+
+
+          <article class="destination-card">
+
+            <div class="card-icon">
+              🌍
+            </div>
+
+            <h3>Beyond Africa</h3>
+
+            <p>
+              Growing our network beyond the African continent.
+            </p>
+
+            <span>
+              MORE TO COME
+            </span>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FLEET ================= -->
+
+    <section id="fleet" class="section fleet-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            OUR AIRCRAFT
+          </p>
+
+          <h2>
+            The Aerovian Fleet
+          </h2>
+
+          <p>
+            A versatile fleet designed for regional,
+            continental and longer-distance operations.
+          </p>
+
+        </div>
+
+
+        <div class="fleet-grid">
+
+          <article class="fleet-card">
+
+            <div class="fleet-number">
+              01
+            </div>
+
+            <h3>
+              Embraer E190-100AR
+            </h3>
+
+            <p>
+              Regional connectivity and efficient operations.
+            </p>
+
+            <strong>
+              85Y · 8J · 3F
+            </strong>
+
+          </article>
+
+
+          <article class="fleet-card">
+
+            <div class="fleet-number">
+              02
+            </div>
+
+            <h3>
+              Embraer E170-200AR
+            </h3>
+
+            <p>
+              Comfortable regional flying for growing markets.
+            </p>
+
+            <strong>
+              65Y · 5J · 3F
+            </strong>
+
+          </article>
+
+
+          <article class="fleet-card">
+
+            <div class="fleet-number">
+              03
+            </div>
+
+            <h3>
+              CRJ900ER
+            </h3>
+
+            <p>
+              Efficient regional service between key cities.
+            </p>
+
+            <strong>
+              67Y · 6J · 3F
+            </strong>
+
+          </article>
+
+
+          <article class="fleet-card">
+
+            <div class="fleet-number">
+              04
+            </div>
+
+            <h3>
+              Airbus A320-200
+            </h3>
+
+            <p>
+              The backbone of our medium-haul network.
+            </p>
+
+            <strong>
+              130Y · 19J · 6F
+            </strong>
+
+          </article>
+
+
+          <article class="fleet-card">
+
+            <div class="fleet-number">
+              05
+            </div
