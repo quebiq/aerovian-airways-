@@ -171,7 +171,7 @@ app.post("/api/newsletter", (req, res) => {
   res.status(201).json({ message: "You're subscribed to Aerovian updates." });
 });
 
-app.get("*", (req, res) => {
+app.get("/{*splat}", (req, res) => {
   res.sendFile(path.join(PUBLIC_DIR, "index.html"));
 });
 
